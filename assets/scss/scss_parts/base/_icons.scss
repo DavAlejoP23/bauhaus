@@ -1,0 +1,110 @@
+$svg-icons: (
+  arrow-more:
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 12"><path fill="#1D1D1B" fill-rule="evenodd" d="M14.778 0L13.68 1.058l4.34 4.192H0v1.5h18.021l-4.34 4.193L14.778 12 21 6l-6.222-6z" clip-rule="evenodd"></path></svg>',
+  arrow-back:
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 12"><path fill="#1D1D1B" fill-rule="evenodd" d="M0,6l6.2,6l1.1-1.1L3,6.8h18V5.2H3l4.3-4.2L6.2,0L0,6z" clip-rule="evenodd"></path></svg>',
+  arrow-previous:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-pink:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#ea568a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-magenta-1:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#e5205a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-magenta-2:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#e51c40" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-red:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#cf2035" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-mustard:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#f19725" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-dijon:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#de6d28" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-cyan-1:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#16b5c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-cyan-2:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#139d9f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-previous-cobalt:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M22 4L10 16L22 28" stroke="#2f79be" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-pink:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#ea568a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-magenta-1:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#e5205a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-magenta-2:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#e51c40" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-red:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#cf2035" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-mustard:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#f19725" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-dijon:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#de6d28" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-cyan-1:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#16b5c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-cyan-2:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#139d9f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  arrow-next-cobalt:
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"><path d="M10 4L22 16L10 28" stroke="#2f79be" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+);
+
+/**
+* Characters to escape from SVGs
+* Source: https://github.com/Threespot/frontline-sass/blob/master/src/variables/_escape-chars.scss
+*/
+$fs-escape-chars: (
+  " ": "%20",
+  "'": "%22",
+  '"': "%27",
+  "#": "%23",
+  "/": "%2F",
+  ":": "%3A",
+  "(": "%28",
+  ")": "%29",
+  "%": "%25",
+  "<": "%3C",
+  ">": "%3E",
+  "\\":"%5C",
+  "^": "%5E",
+  "{": "%7B",
+  "|": "%7C",
+  "}": "%7D",
+);
+
+/**
+ * Helper to get URL-escaped inline SVG code
+ */
+@function svg($name) {
+  // Check if icon exists
+  @if not map-has-key($svg-icons, $name) {
+    @error 'icon “#{$name}” does not exists in $svg-icons map';
+    @return false;
+  }
+
+  // Get icon data
+  $icon-map: map-get($svg-icons, $name);
+
+  $escaped-string: "";
+  $unquote-icon: unquote($icon-map);
+  // Loop through each character in string
+  @for $i from 1 through str-length($unquote-icon) {
+    $char: str-slice($unquote-icon, $i, $i);
+
+    // Check if character is in symbol map
+    $char-lookup: map-get($fs-escape-chars, $char);
+
+    // If it is, use escaped version
+    @if $char-lookup != null {
+      $char: $char-lookup;
+    }
+
+    // Append character to escaped string
+    $escaped-string: $escaped-string + $char;
+  }
+
+  // Return inline SVG data
+  @return url("data:image/svg+xml, #{$escaped-string} ");
+}
+
+:root {
+  @each $name, $code in $svg-icons {
+    --svg-#{$name}: #{svg($name)};
+  }
+}

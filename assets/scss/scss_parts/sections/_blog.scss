@@ -1,0 +1,197 @@
+@each $category, $color in $category-pill-color {
+  .#{$category}Pill {
+    @include categoryPill($category, $color, transparent, var(--white), $color);
+  }
+  .#{$category}Pill:hover {
+    @include categoryPill($category, $color, transparent, $color, $color);
+  }
+}
+
+.filterSection {
+  width: 100%;
+  background-color: var(--grey1);
+  .filterContainer {
+    width: 100%;
+    padding: 2em 16px 1em;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 768px) {
+      padding: 3em 40px 2em;
+    }
+    @media (min-width: 1500px) {
+      max-width: 1500px;
+      padding: 3em 62px 2em;
+    }
+    .titleAndSearchContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .cardSearchContainer {
+      width: 100%;
+      .searchBlogPostGrid {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .cardBlogPostContainer {
+          display: flex;
+          max-width: 320px;
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          @media (min-width: 768px) {
+            max-width: 576px;
+          }
+          .thumbnailImage {
+            width: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+            @media (min-width: 768px) {
+              max-width: 280px;
+            }
+          }
+          .cardBlogPostDescription {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    .filterBtnsContainer {
+      display: flex;
+      flex-flow: wrap;
+      grid-column-gap: 10px;
+      grid-row-gap: 16px;
+      padding: 12px 0;
+    }
+  }
+}
+
+.blogSection {
+  width: 100%;
+  .blogContainer {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 768px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media (min-width: 1500px) {
+      max-width: 1500px;
+      padding-left: 62px;
+      padding-right: 62px;
+    }
+    .blogAllPostLink {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.blogPostGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column-gap: 0;
+  row-gap: 25px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 1%;
+  }
+  @media (min-width: 992px) {
+    column-gap: 3%;
+  }
+}
+
+#post {
+  font-family: var(--fontArial);
+  @media (min-width: 992px) {
+    background-color: var(--grey3);
+  }
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    font-weight: var(--fontBold);
+    line-height: 1;
+    color: var(--black);
+    @media (min-width: 992px) {
+      font-size: 2.5em;
+    }
+  }
+  h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: var(--fontBold);
+    line-height: 1;
+    color: var(--grey6);
+    @media (min-width: 992px) {
+      font-size: 2em;
+    }
+  }
+  h3 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: var(--fontBold);
+    line-height: 1;
+    color: var(--grey5);
+    @media (min-width: 992px) {
+      font-size: 1.7em;
+    }
+  }
+  p {
+    font-size: 0.8em;
+    font-weight: var(--fontLight);
+    line-height: 1.2;
+    color: var(--black);
+    @media (min-width: 992px) {
+      font-size: 1em;
+    }
+  }
+}
+
+.bodyBlogPost {
+  width: 100%;
+  padding: 60px calc(100vw * 20 / 320) 25px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 992px) {
+    width: 70%;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: var(--white);
+  }
+  @media (min-width: 1500px) {
+    max-width: 900px;
+  }
+  .categoryAndDateContainer {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: left;
+    grid-column-gap: 7px;
+    grid-row-gap: 16px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    .date {
+      font-size: 12px;
+      font-weight: var(--fontLight);
+      line-height: 1;
+      color: var(--grey4);
+      @media (min-width: 992px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

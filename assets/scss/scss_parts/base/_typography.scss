@@ -1,0 +1,12 @@
+.primaryTitle {
+  font-family: var(--fontPixel);
+  font-size: 22px;
+  font-weight: var(--fontSemiBold);
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}

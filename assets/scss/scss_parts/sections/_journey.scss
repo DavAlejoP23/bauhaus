@@ -1,0 +1,215 @@
+$hovers-hogarth: var(--svg-logo-hogarth-hover-1),
+  var(--svg-logo-hogarth-hover-2), var(--svg-logo-hogarth-hover-3);
+
+.journey {
+  background: linear-gradient(
+    187deg,
+    rgba(224, 245, 252, 1) 0%,
+    rgba(226, 246, 252, 1) 10%,
+    rgba(233, 248, 251, 1) 25%,
+    rgba(242, 251, 250, 1) 40%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 22px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 768px) {
+      padding: 54px 40px;
+    }
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+    @media (min-width: 1500px) {
+      max-width: 1500px;
+      padding: 80px 62px;
+    }
+    &--title {
+      max-width: 500px;
+      width: 100%;
+      padding-bottom: 30px;
+      @media (min-width: 992px) {
+        max-width: 420px;
+        padding-bottom: 0;
+      }
+      #myPixel {
+        .st0 {
+          fill: var(--pixel-magenta-1);
+        }
+        .st1 {
+          fill: var(--pixel-cyan-1);
+        }
+        .st2 {
+          fill: var(--pixel-cobalt);
+        }
+        .st3 {
+          fill: var(--pixel-mustard);
+        }
+        .st4 {
+          fill: var(--pixel-cyan-2);
+        }
+        .st5 {
+          fill: var(--pixel-magenta-2);
+        }
+        .st6 {
+          fill: var(--pixel-pink);
+        }
+        .st7 {
+          fill: var(--pixel-dijon);
+        }
+        .st8 {
+          fill: var(--pixel-red);
+        }
+      }
+    }
+    &--description {
+      @media (min-width: 992px) {
+        max-width: 956px;
+        padding-left: 28px;
+        padding-right: 28px;
+      }
+      .description {
+        font-family: var(--fontPixel);
+        font-weight: var(--fontRegular);
+        font-size: 16px;
+        @media (min-width: 992px) {
+          font-size: 21.5px;
+        }
+        &--usfq {
+          color: var(--usfq);
+          &:before {
+            content: var(--svg-logo-usfq);
+            display: inline-block;
+            max-width: 75px;
+            width: 100%;
+            margin-left: 2px;
+            margin-right: 2px;
+            @media (min-width: 992px) {
+              max-width: 100px;
+            }
+          }
+          span {
+            position: absolute;
+            display: block;
+            overflow: hidden;
+            text-indent: -100000000px;
+          }
+          &:hover {
+            &:before {
+              content: var(--svg-logo-usfq-hover);
+            }
+          }
+        }
+        &--hogarth {
+          color: var(--hogarth);
+          content: var(--svg-logo-hogarth);
+          display: inline-block;
+          max-width: 75px;
+          width: 100%;
+          margin-left: 2px;
+          margin-right: 2px;
+          @media (min-width: 992px) {
+            max-width: 100px;
+          }
+          span {
+            position: absolute;
+            display: block;
+            overflow: hidden;
+            text-indent: -100000000px;
+          }
+        }
+      }
+    }
+    &--skills-explore-projects {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 25px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 22px 16px;
+      @media (min-width: 768px) {
+        padding: 54px 40px;
+      }
+      @media (min-width: 992px) {
+        flex-direction: row;
+        column-gap: 5%;
+      }
+      @media (min-width: 1500px) {
+        max-width: 1500px;
+        padding: 80px 62px;
+      }
+    }
+    &--explore-projects {
+      width: 100%;
+    }
+    &--skills-and-blogs {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 25px;
+      width: 100%;
+    }
+    &--skills {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      width: 100%;
+      height: fit-content;
+      padding: 20px 40px;
+      border-radius: 16px;
+      -webkit-box-shadow: 0px 0px 5px 0.5px var(--pixel-magenta-1);
+      -moz-box-shadow: 0px 0px 5px 0.5px var(--pixel-magenta-1);
+      box-shadow: 0px 0px 5px 0.5px var(--pixel-magenta-1);
+      .container {
+        &__skill-bar {
+          display: flex;
+          flex-direction: column;
+          row-gap: 12px;
+          .skill {
+            &--title {
+              font-family: var(--fontPixel);
+              font-weight: var(--fontBold);
+              font-size: 20px;
+              color: var(--black);
+              margin: 0;
+            }
+            &__level {
+              display: flex;
+              .progress {
+                display: flex;
+                max-width: 100px;
+                width: 100%;
+                height: 8px;
+                background-color: var(--grey3);
+                border: 2px solid var(--grey3);
+                &--low {
+                  background-color: var(--pixel-red);
+                  border: 2px solid var(--pixel-red);
+                }
+                &--low-mid {
+                  background-color: var(--pixel-pink);
+                  border: 2px solid var(--pixel-pink);
+                }
+                &--mid {
+                  background-color: var(--pixel-mustard);
+                  border: 2px solid var(--pixel-mustard);
+                }
+                &--mid-high {
+                  background-color: var(--pixel-dijon);
+                  border: 2px solid var(--pixel-dijon);
+                }
+                &--high {
+                  background-color: var(--pixel-cyan-1);
+                  border: 2px solid var(--pixel-cyan-1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

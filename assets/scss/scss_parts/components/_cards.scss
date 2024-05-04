@@ -1,0 +1,17 @@
+.container {
+  @each $color-name, $color-value in $card--colors {
+    @each $height-name, $height-value in $card--heights {
+      &__card--#{"#{$color-name}"}--#{$height-name} {
+        @include custom-card($color-value, $height-value);
+      }
+    }
+  }
+}
+
+.container {
+  @each $color-name, $color-value in $category-pill-color {
+    &__card--blog--#{$color-name} {
+      @include custom-card-blog($color-value, $color-value);
+    }
+  }
+}

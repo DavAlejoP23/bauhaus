@@ -1,0 +1,95 @@
+.container {
+  &__nav {
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    &--logo {
+      img {
+        max-width: 90px;
+        width: 100%;
+      }
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 4rem;
+      height: 1.5rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 15px;
+      z-index: 10;
+      @media (min-width: 768px) {
+        display: none;
+      }
+      .line1,
+      .line2,
+      .line3 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        span {
+          width: 2rem;
+          height: 0.25rem;
+          background: #333;
+          transition: all 0.3s linear;
+          position: relative;
+          transform-origin: 1px;
+        }
+      }
+      .line1,
+      .line2,
+      .line3 {
+        span:nth-child(1) {
+          border-radius: 2rem 0 0 2rem;
+        }
+        span:nth-child(2) {
+          border-radius: 0 2rem 2rem 0;
+        }
+      }
+
+      &.active {
+        .line1 {
+          span:nth-child(1) {
+            transform: rotate(45deg) translateX(5.5px) translateY(5.5px);
+            transform-origin: right;
+          }
+          span:nth-child(2) {
+            transform: rotate(-45deg) translateY(5.5px) translateX(-5.5px);
+          }
+        }
+        .line2 {
+          span:nth-child(1) {
+            transform: translateX(-20px);
+            opacity: 0;
+          }
+          span:nth-child(2) {
+            transform: translateX(20px);
+            opacity: 0;
+          }
+        }
+        .line3 {
+          span:nth-child(1) {
+            transform: rotate(-45deg) translateX(5.5px) translateY(-5.5px);
+            transform-origin: right;
+          }
+          span:nth-child(2) {
+            transform: rotate(45deg) translateX(-5.5px) translateY(-5.5px);
+          }
+        }
+      }
+    }
+
+    &--menu {
+      display: none;
+      &.open {
+        display: block;
+      }
+    }
+  }
+}

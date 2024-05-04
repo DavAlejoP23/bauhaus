@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BauHaus</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container__nav">
+        <div class="container__nav--logo">
+          <img src="assets/images/bauhaus-logo.png" alt="Logo BauHaus" />
+        </div>
+        <button
+          class="hamburger"
+          onclick="toggleHamburger()"
+          title="Navigation Menu"
+          type="button"
+        >
+          <div class="line1"><span></span> <span></span></div>
+          <div class="line2"><span></span> <span></span></div>
+          <div class="line3"><span></span> <span></span></div>
+        </button>
+      </div>
+      <nav class="container__nav--menu">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/utils.js"></script>
+  </body>
+</html>

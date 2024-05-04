@@ -1,0 +1,73 @@
+// Mapa de colores y SVG correspondientes
+$btn__translate--color-svg: (
+  pink: (
+    var(--pixel-pink),
+    var(--svg-arrow-next-pink),
+    var(--svg-arrow-previous-pink),
+  ),
+  magenta-1: (
+    var(--pixel-magenta-1),
+    var(--svg-arrow-next-magenta-1),
+    var(--svg-arrow-previous-magenta-1),
+  ),
+  magenta-2: (
+    var(--pixel-magenta-2),
+    var(--svg-arrow-next-magenta-2),
+    var(--svg-arrow-previous-magenta-2),
+  ),
+  red: (
+    var(--pixel-red),
+    var(--svg-arrow-next-red),
+    var(--svg-arrow-previous-red),
+  ),
+  mustard: (
+    var(--pixel-mustard),
+    var(--svg-arrow-next-mustard),
+    var(--svg-arrow-previous-mustard),
+  ),
+  dijon: (
+    var(--pixel-dijon),
+    var(--svg-arrow-next-dijon),
+    var(--svg-arrow-previous-dijon),
+  ),
+  cyan-1: (
+    var(--pixel-cyan-1),
+    var(--svg-arrow-next-cyan-1),
+    var(--svg-arrow-previous-cyan-1),
+  ),
+  cyan-2: (
+    var(--pixel-cyan-2),
+    var(--svg-arrow-next-cyan-2),
+    var(--svg-arrow-previous-cyan-2),
+  ),
+  cobalt: (
+    var(--pixel-cobalt),
+    var(--svg-arrow-next-cobalt),
+    var(--svg-arrow-previous-cobalt),
+  ),
+);
+
+$card--colors: (
+  pink: var(--pixel-pink),
+  magenta-1: var(--pixel-magenta-1),
+  magenta-2: var(--pixel-magenta-2),
+  red: var(--pixel-red),
+  mustard: var(--pixel-mustard),
+  dijon: var(--pixel-dijon),
+  cyan-1: var(--pixel-cyan-1),
+  cyan-2: var(--pixel-cyan-2),
+  cobalt: var(--pixel-cobalt),
+);
+
+$card--heights: (
+  small: 200px,
+  medium: 400px,
+  large: 600px,
+  x-large: 100%,
+);
+
+$category-pill-color: (
+  xbox: var(--xbox),
+  entretenimiento: var(--entretenimiento),
+  videojuegos: var(--videojuegos),
+);
