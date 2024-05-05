@@ -1,17 +1,31 @@
 .container {
-  @each $color-name, $color-value in $card--colors {
-    @each $height-name, $height-value in $card--heights {
-      &__card--#{"#{$color-name}"}--#{$height-name} {
-        @include custom-card($color-value, $height-value);
+  &__artists {
+    &--card {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      width: 300px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
       }
-    }
-  }
-}
-
-.container {
-  @each $color-name, $color-value in $category-pill-color {
-    &__card--blog--#{$color-name} {
-      @include custom-card-blog($color-value, $color-value);
+      h3 {
+        margin-top: 20px;
+        font-size: 24px;
+        color: var(--primary-light-orange);
+      }
+      p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: var(--grey5);
+        text-align: justify;
+      }
     }
   }
 }

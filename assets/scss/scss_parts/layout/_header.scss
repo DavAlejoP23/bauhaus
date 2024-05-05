@@ -96,13 +96,19 @@
       max-width: 1500px;
       width: 100%;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 20px;
       .list {
         &__menu {
-          display: flex;
+          display: none;
+          justify-content: center;
+          column-gap: 4%;
           list-style: none;
           margin-block-start: 0;
+          margin: 0;
           padding-inline-start: 0;
+          @media (min-width: 768px) {
+            display: flex;
+          }
           li {
             a {
               max-width: -moz-fit-content;
@@ -112,7 +118,10 @@
               padding: 5px 8px;
               border: 1px solid var(--primary-yellow);
               border-radius: 5px;
+              font-family: var(--poppins-font-family);
               font-size: 14px;
+              font-weight: var(--poppins-font-weight-medium);
+              font-style: var(--poppins-font-style-normal);
               color: var(--primary-yellow);
               text-transform: uppercase;
             }

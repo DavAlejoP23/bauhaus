@@ -17,9 +17,19 @@
   --primary-yellow: #f4d35e; // Yellow
   --primary-light-orange: #ee964b; // Light Orange
   --primary-dark-orange: #f95738; // Dark Orange
-
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  &__section {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      max-width: 1500px;
+    }
+  }
 }

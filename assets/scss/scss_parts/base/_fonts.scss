@@ -1,17 +1,137 @@
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-$fontArial: "Arial, Helvetica", sans-serif;
-$fontPixel: "Pixelify Sans", sans-serif;
-$fontRegular: 400;
-$fontMedium: 500;
-$fontSemiBold: 600;
-$fontBold: 700;
+$fontPoppins: "Poppins", sans-serif;
+$fontStyleNormal: normal;
+$fontStyleItalic: italic;
+$fontWeightThin: 100;
+$fontWeightExtraLight: 200;
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+$fontWeightExtraBold: 800;
+$fontWeightBlack: 900;
 
 :root {
-  --fontArial: #{$fontArial};
-  --fontPixel: #{$fontPixel};
-  --fontRegular: #{$fontRegular};
-  --fontMedium: #{$fontMedium};
-  --fontSemiBold: #{$fontSemiBold};
-  --fontBold: #{$fontBold};
+  --poppins-font-family: #{$fontPoppins};
+  --poppins-font-style-normal: #{$fontStyleNormal};
+  --poppins-font-style-italic: #{$fontStyleItalic};
+  --poppins-font-weight-thin: #{$fontWeightThin};
+  --poppins-font-weight-extralight: #{$fontWeightExtraLight};
+  --poppins-font-weight-light: #{$fontWeightLight};
+  --poppins-font-weight-regular: #{$fontWeightRegular};
+  --poppins-font-weight-medium: #{$fontWeightMedium};
+  --poppins-font-weight-semibold: #{$fontWeightSemiBold};
+  --poppins-font-weight-bold: #{$fontWeightBold};
+  --poppins-font-weight-extrabold: #{$fontWeightExtraBold};
+  --poppins-font-weight-black: #{$fontWeightBlack};
+}
+
+.poppins-thin {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-thin);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-extralight {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-extralight);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-light {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-light);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-regular {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-regular);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-medium {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-medium);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-semibold {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-semibold);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-bold {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-extrabold {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-extrabold);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-black {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-black);
+  font-style: var(--poppins-font-style-normal);
+}
+
+.poppins-thin-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-thin);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-extralight-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-extralight);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-light-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-light);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-regular-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-regular);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-medium-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-medium);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-semibold-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-semibold);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-bold-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-extrabold-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-extrabold);
+  font-style: var(--poppins-font-style-italic);
+}
+
+.poppins-black-italic {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-black);
+  font-style: var(--poppins-font-style-italic);
 }
