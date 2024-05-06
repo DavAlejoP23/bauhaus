@@ -631,11 +631,23 @@ a {
     width: 70%;
   }
 }
-.container__works--item-info img {
+.container__works--item-info .works--image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (min-width: 992px) {
+  .container__works--item-info .works--image {
+    width: 30%;
+  }
+}
+.container__works--item-info .works--image img {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .container__works--item-info img {
+  .container__works--item-info .works--image img {
     width: 30%;
   }
 }
@@ -1520,16 +1532,23 @@ a {
 .container__artists--card {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  min-height: 700px;
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  padding: 20px;
-  width: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .container__artists--card {
+    margin: 20px;
+    padding: 20px;
+  }
 }
 .container__artists--card img {
   width: 100%;
-  height: auto;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
 }
