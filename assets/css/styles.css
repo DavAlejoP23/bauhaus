@@ -13,6 +13,7 @@
   --primary-yellow: #f4d35e;
   --primary-light-orange: #ee964b;
   --primary-dark-orange: #f95738;
+  --secondary-blue: #1b262c;
 }
 
 a {
@@ -650,6 +651,118 @@ a {
   .container__works--item-info .works--image img {
     width: 30%;
   }
+}
+
+.container__comments--form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px var(--primary-beige);
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .container__comments--form {
+    max-width: 768px;
+  }
+}
+.container__comments--form form {
+  display: flex;
+  flex-direction: column;
+}
+.container__comments--form form .input-field {
+  position: relative;
+}
+.container__comments--form form .input-field input[type=text],
+.container__comments--form form .input-field select,
+.container__comments--form form .input-field textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid var(--grey2);
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--black);
+}
+.container__comments--form form .input-field input[type=text]:focus,
+.container__comments--form form .input-field select:focus,
+.container__comments--form form .input-field textarea:focus {
+  outline: none;
+}
+.container__comments--form form .input-field input[type=text]:focus ~ label, .container__comments--form form .input-field input[type=text]:valid ~ label,
+.container__comments--form form .input-field select:focus ~ label,
+.container__comments--form form .input-field select:valid ~ label,
+.container__comments--form form .input-field textarea:focus ~ label,
+.container__comments--form form .input-field textarea:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: var(--black);
+}
+.container__comments--form form .input-field label {
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  color: var(--grey4);
+}
+.container__comments--form form .input-field textarea {
+  min-height: 100px;
+  resize: none;
+  field-sizing: content;
+  max-height: 200px;
+}
+.container__comments--form form input[type=submit] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 16px;
+}
+.container__comments--form form input[type=submit]:hover {
+  background-color: var(--secondary-blue);
+}
+.container__comments--comment {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.container__comments--comment .comment {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 0 10px var(--primary-blue);
+  border-radius: 10px;
+}
+.container__comments--comment .comment .work {
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-normal);
+  font-size: 16px;
+  color: var(--primary-blue);
+  margin-bottom: 1.2rem;
+}
+@media (min-width: 768px) {
+  .container__comments--comment .comment .work {
+    font-size: 18px;
+  }
+}
+.container__comments--comment .comment .comment-text {
+  font-family: var(--poppins-font-family);
+  font-size: 14px;
+  font-weight: var(--poppins-font-weight-medium);
+  font-style: var(--poppins-font-style-normal);
+  color: var(--grey4);
+  margin-bottom: 1.2rem;
+}
+.container__comments--comment .comment .author {
+  font-family: var(--poppins-font-family);
+  font-size: 12px;
+  font-weight: var(--poppins-font-weight-medium);
+  font-style: var(--poppins-font-style-normal);
+  color: var(--secondary-blue);
+  margin-bottom: 1.2rem;
 }
 
 .btn__normal {
