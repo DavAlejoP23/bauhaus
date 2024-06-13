@@ -177,28 +177,7 @@ a {
  * Helper to get URL-escaped inline SVG code
  */
 :root {
-  --svg-arrow-more: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20fill=%27none%27%20viewBox=%270%200%2021%2012%27%3E%3Cpath%20fill=%27%231D1D1B%27%20fill-rule=%27evenodd%27%20d=%27M14.778%200L13.68%201.058l4.34%204.192H0v1.5h18.021l-4.34%204.193L14.778%2012%2021%206l-6.222-6z%27%20clip-rule=%27evenodd%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E ");
-  --svg-arrow-back: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20fill=%27none%27%20viewBox=%270%200%2021%2012%27%3E%3Cpath%20fill=%27%231D1D1B%27%20fill-rule=%27evenodd%27%20d=%27M0,6l6.2,6l1.1-1.1L3,6.8h18V5.2H3l4.3-4.2L6.2,0L0,6z%27%20clip-rule=%27evenodd%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23FFFFFF%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-pink: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23ea568a%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-magenta-1: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23e5205a%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-magenta-2: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23e51c40%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-red: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23cf2035%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-mustard: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23f19725%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-dijon: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23de6d28%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-cyan-1: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%2316b5c0%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-cyan-2: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%23139d9f%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-previous-cobalt: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M22%204L10%2016L22%2028%27%20stroke=%27%232f79be%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23FFFFFF%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-pink: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23ea568a%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-magenta-1: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23e5205a%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-magenta-2: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23e51c40%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-red: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23cf2035%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-mustard: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23f19725%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-dijon: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23de6d28%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-cyan-1: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%2316b5c0%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-cyan-2: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%23139d9f%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
-  --svg-arrow-next-cobalt: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2032%2032%27%20fill=%27none%27%3E%3Cpath%20d=%27M10%204L22%2016L10%2028%27%20stroke=%27%232f79be%27%20stroke-width=%272.5%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%2F%3E%3C%2Fsvg%3E ");
+  --svg-icon-login: url("data:image/svg+xml, %3Csvg%20viewBox=%270%200%2028%2028%27%20fill=%27none%27%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20fill-rule=%27evenodd%27%20clip-rule=%27evenodd%27%20d=%27M18.6667%207C18.6667%209.57733%2016.5773%2011.6667%2014%2011.6667C11.4227%2011.6667%209.33333%209.57733%209.33333%207C9.33333%204.42267%2011.4227%202.33333%2014%202.33333C16.5773%202.33333%2018.6667%204.42267%2018.6667%207ZM21%207C21%2010.866%2017.866%2014%2014%2014C10.134%2014%207%2010.866%207%207C7%203.13401%2010.134%200%2014%200C17.866%200%2021%203.13401%2021%207ZM9.33333%2016.3333C4.17868%2016.3333%200%2020.512%200%2025.6667V26.8333C0%2027.4777%200.522334%2028%201.16667%2028C1.811%2028%202.33333%2027.4777%202.33333%2026.8333V25.6667C2.33333%2021.8007%205.46734%2018.6667%209.33333%2018.6667H18.6667C22.5327%2018.6667%2025.6667%2021.8007%2025.6667%2025.6667V26.8333C25.6667%2027.4777%2026.189%2028%2026.8333%2028C27.4777%2028%2028%2027.4777%2028%2026.8333V25.6667C28%2020.512%2023.8213%2016.3333%2018.6667%2016.3333H9.33333Z%27%20fill=%27%23f4d35e%27%2F%3E%3C%2Fsvg%3E ");
 }
 
 @keyframes moveForwardAndBack {
@@ -268,6 +247,34 @@ a {
 .container__nav--logo img {
   max-width: 90px;
   width: 100%;
+}
+.container__nav--login {
+  display: none;
+}
+@media (min-width: 768px) {
+  .container__nav--login {
+    display: block;
+  }
+}
+.container__nav--login .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: var(--poppins-font-family);
+  font-size: 12px;
+  font-weight: var(--poppins-font-weight-medium);
+  font-style: var(--poppins-font-style-normal);
+  color: var(--primary-blue);
+  text-transform: uppercase;
+}
+.container__nav--login .login:before {
+  content: var(--svg-icon-login);
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
 }
 .container__nav .hamburger {
   display: flex;
@@ -763,6 +770,73 @@ a {
   font-style: var(--poppins-font-style-normal);
   color: var(--secondary-blue);
   margin-bottom: 1.2rem;
+}
+
+.container__form--login {
+  max-width: 512px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.container__form--login--title {
+  padding: 20px 0;
+  font-family: var(--poppins-font-family);
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: var(--poppins-font-weight-medium);
+  font-style: var(--poppins-font-style-normal);
+  color: var(--primary-blue);
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .container__form--login--title {
+    font-size: 26px;
+  }
+}
+.container__form--login--structure {
+  max-width: 512px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container__form--login--structure .structure__input--field {
+  position: relative;
+  margin-bottom: 30px;
+}
+.container__form--login--structure .structure__input--field .label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transition: all 0.3s;
+  font-family: var(--poppins-font-family);
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-normal);
+  color: var(--primary-dark-orange);
+}
+.container__form--login--structure .structure__input--field--label {
+  width: 100%;
+  height: 45px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--grey6);
+  background-color: var(--grey1);
+  font-family: var(--gotham-book);
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--grey6);
+  outline: 0;
+  cursor: pointer;
+}
+.container__form--login--structure .structure__input--field--label:focus {
+  border-bottom: 2px solid var(--grey6);
+}
+.container__form--login--structure .structure__input--field--label:focus + .label, .container__form--login--structure .structure__input--field--label.has-text + .label {
+  top: -20px;
+  font-size: 12px;
 }
 
 .btn__normal {

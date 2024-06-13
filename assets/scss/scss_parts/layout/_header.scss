@@ -13,6 +13,32 @@
         width: 100%;
       }
     }
+    &--login {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+      .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-family: var(--poppins-font-family);
+        font-size: 12px;
+        font-weight: var(--poppins-font-weight-medium);
+        font-style: var(--poppins-font-style-normal);
+        color: var(--primary-blue);
+        text-transform: uppercase;
+        &:before {
+          content: var(--svg-icon-login);
+          display: block;
+          position: relative;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
     .hamburger {
       display: flex;
       flex-direction: column;
