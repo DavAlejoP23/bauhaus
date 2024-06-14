@@ -1,15 +1,17 @@
 function slickArtists() {
   console.log("slickArtists function is running");
   $(".slick--artists").slick({
-    centerMode: true,
+    centerMode: false,
     centerPadding: "60px",
     slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
           slidesToShow: 2,
         },
@@ -18,7 +20,6 @@ function slickArtists() {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
         },

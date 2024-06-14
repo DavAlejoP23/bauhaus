@@ -73,6 +73,7 @@
         </div>
     </section>
     <section id="artists" class="container__section">
+        <input type="text" id="search" placeholder="Buscar artistas...">
         <div class="container__artists">
             <h2>Referentes</h2>
             <div class="container__artists--list slick--artists">
