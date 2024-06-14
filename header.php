@@ -19,7 +19,9 @@ session_start();
     <header>
         <div class="container__nav">
             <div class="container__nav--logo">
-                <img src="assets/images/bauhaus-logo.png" alt="Logo BauHaus" />
+                <a href="/">
+                    <img src="assets/images/bauhaus-logo.png" alt="Logo BauHaus" />
+                </a>
             </div>
             <div class="container__nav--login">
                 <?php if (isset($_SESSION['fname'])) { ?>
@@ -36,20 +38,7 @@ session_start();
         </div>
         <nav class="container__nav--menu">
             <ul>
-                <li><a href="#history">Historia</a></li>
-                <li><a href="#artists">Referentes</a></li>
-                <li><a href="#works">Obras</a></li>
-                <li><a href="#form_commentaries">Haz tu propio comentario</a></li>
-                <li><a href="#answers">Comentarios</a></li>
-            </ul>
-        </nav>
-        <nav class="container__nav--submenu">
-            <ul class="list__menu">
-                <li><a href="#history">Historia</a></li>
-                <li><a href="#artists">Referentes</a></li>
-                <li><a href="#works">Obras</a></li>
-                <li><a href="#form_commentaries">Haz tu propio comentario</a></li>
-                <li><a href="#answers">Comentarios</a></li>
+                <li><a href="login.php">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>

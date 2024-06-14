@@ -1,4 +1,13 @@
 <?php include 'header.php'; ?>
+<nav class="container__nav--submenu">
+    <ul class="list__menu">
+        <li><a href="#history">Historia</a></li>
+        <li><a href="#artists">Referentes</a></li>
+        <li><a href="#works">Obras</a></li>
+        <li><a href="#form_commentaries">Haz tu propio comentario</a></li>
+        <li><a href="#answers">Comentarios</a></li>
+    </ul>
+</nav>
 <main>
     <section id="history" class="container__section">
         <div class="container__history">
