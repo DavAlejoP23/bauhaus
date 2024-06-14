@@ -3,7 +3,7 @@
 <main>
     <section class="container__section">
         <div class="container__form--login">
-            <h2 class="container__form--login--title">Iniciar Sesión</h2>
+            <h1 class="container__form--login--title">Iniciar Sesión</h1>
             <form class="container__form--login--structure" action="includes/login.inc.php" method="post">
                 <div class="structure__input--field">
                     <input class="structure__input--field--label" type="text" name="mailuid">
@@ -14,10 +14,12 @@
                     <input class="structure__input--field--label" type="password" name="pwd">
                     <label class="label" for="password">Password</label>
                 </div>
-                <button type="submit" name="login-submit">Inciar Sesión</button>
+                <button class="linkMore" type="submit" name="login-submit">Inciar Sesión</button>
             </form>
-            <a href="signup.php">Signup</a>
-            <a href="reset-password.php">Forgot your password?</a>
+            <div class="container__signup--structure">
+                <h2 class="container__signup--structure--title">¿No tienes una cuenta?</h2>
+                <a class="linkMore--alternative" href="signup.php">Registrate</a>
+            </div>
         </div>
     </section>
 </main>

@@ -1,85 +1,18 @@
-@mixin btn-with-arrow(
-  $direction,
-  $color-info,
-  $text-color,
-  $border-color,
-  $background-color,
-  $hover-text-color,
-  $hover-border-color,
-  $hover-background-color,
-  $svg-next,
-  $svg-previous
-) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  padding: 10px 18.5px;
-  border: 1px solid $border-color;
-  border-radius: 16px;
-  background-color: $background-color;
-  font-family: var(--fontPixel);
-  font-weight: var(--fontRegular);
-  font-size: 16px;
-  line-height: 1em;
-  color: $text-color;
-  text-decoration: none;
-  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
-
-  // Actualizamos el contenido antes y después con el SVG correspondiente para Next y Previous
-  @if $direction == "Next" {
-    &:before {
-      content: "";
-    }
-    &:after {
-      content: $svg-next; // SVG correspondiente para Next
-      display: inline-block;
-      width: 17px;
-      margin-top: 4px;
-      margin-left: 5px;
-    }
-  } @else if $direction == "Previous" {
-    &:before {
-      content: $svg-previous; // SVG correspondiente para Previous
-      display: inline-block;
-      width: 17px;
-      margin-top: 4px;
-      margin-right: 5px;
-    }
-    &:after {
-      content: "";
-    }
-  }
-
-  &:hover {
-    color: $hover-text-color;
-    border: 1px solid $hover-border-color;
-    background-color: $hover-background-color;
-    box-shadow: 0px 0px 5px 0.5px $hover-background-color;
-    @if $direction == "Next" {
-      &:after {
-        content: var(--svg-arrow-next);
-        animation: moveForwardAndBack 2s ease infinite;
-      }
-    } @else if $direction == "Previous" {
-      &:before {
-        content: var(--svg-arrow-previous);
-        animation: moveForwardAndBackInvert 2s ease infinite;
-      }
-    }
-  }
-}
-
 @mixin link-with-arrow($direction) {
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
-  font-family: var(--fontPixel);
-  font-weight: var(--fontMedium);
+  padding: 8px 15px;
+  border: 1px solid var(--primary-blue);
+  border-radius: 16px;
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-normal);
   font-size: 14px;
   line-height: 1em;
-  color: var(--black);
+  background-color: var(--primary-blue);
+  color: var(--white);
   text-decoration: none;
-
   @if $direction == "More" {
     &:before {
       content: "";
@@ -117,125 +50,54 @@
   }
 }
 
-@mixin categoryPill(
-  $category,
-  $background-color,
-  $hover-background-color,
-  $text-color,
-  $border-color
-) {
-  max-width: fit-content;
-  width: 100%;
+@mixin link-with-arrow-alternative($direction) {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  font-family: var(--fontArial);
-  font-size: 16px;
-  font-weight: var(--fontBold);
-  color: $text-color;
-  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  border: 1px solid var(--primary-yellow);
+  border-radius: 16px;
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-normal);
+  font-size: 14px;
+  line-height: 1em;
+  background-color: var(--primary-yellow);
+  color: var(--white);
   text-decoration: none;
-  background: $background-color;
+  @if $direction == "More" {
+    &:before {
+      content: "";
+    }
+    &:after {
+      content: var(--svg-arrow-more);
+      display: inline-block;
+      width: 21px;
+      margin-top: 2.5px;
+      margin-left: 5px;
+    }
+  } @else if $direction == "Back" {
+    &:before {
+      content: var(--svg-arrow-back);
+      display: inline-block;
+      width: 21px;
+      margin-top: 2.5px;
+      margin-right: 5px;
+    }
+    &:after {
+      content: "";
+    }
+  }
 
   &:hover {
-    background: $hover-background-color;
-    color: $text-color;
-    border: 2px solid $border-color;
-  }
-}
-
-@mixin custom-card($color, $height) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  min-height: $height;
-  padding: 20px 40px;
-  border-radius: 16px;
-  box-shadow: 0px 0px 5px 0.5px $color;
-
-  &--title {
-    .title {
-      font-family: var(--fontPixel);
-      font-weight: var(--fontMedium);
-      font-size: 24px;
-      color: $color;
-      @media (min-width: 768px) {
-        font-size: 30px;
+    @if $direction == "More" {
+      &:after {
+        animation: moveForwardAndBack 2s ease infinite;
       }
-      @media (min-width: 992px) {
-        font-size: 36px;
+    } @else if $direction == "Back" {
+      &:before {
+        animation: moveForwardAndBackInvert 2s ease infinite;
       }
-    }
-  }
-
-  &--btn {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 10px 0;
-  }
-}
-
-@mixin custom-card-blog($color, $text-color) {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 16px;
-  box-shadow: 0px 0px 5px 0.5px $color;
-  .blogPostDate {
-    font-family: var(--fontPixel);
-    font-weight: var(--fontRegular);
-    font-size: 14px;
-    line-height: 1em;
-    color: var(--black);
-  }
-  .thumbnailImage {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    @media (min-width: 768px) {
-      max-width: 600px;
-    }
-  }
-  .blogPostTitle {
-    display: -webkit-box;
-    font-family: var(--fontPixel);
-    font-weight: var(--fontMedium);
-    font-size: 16px;
-    line-height: 2em;
-    color: $text-color;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    @media (min-width: 768px) {
-      font-size: 18px;
-    }
-  }
-
-  .blogPostReview {
-    font-family: var(--fontPixel);
-    font-weight: var(--fontRegular);
-    font-size: 14px;
-    line-height: 1em;
-    display: -webkit-box;
-    color: var(--grey4);
-    height: 3em;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  > .link {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    @media (min-width: 768px) {
-      padding-top: 25px;
-      padding-bottom: 25px;
     }
   }
 }

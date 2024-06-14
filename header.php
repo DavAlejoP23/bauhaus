@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php
+session_start();
+?>
 
 <head>
     <meta charset="UTF-8" />
@@ -19,7 +22,11 @@
                 <img src="assets/images/bauhaus-logo.png" alt="Logo BauHaus" />
             </div>
             <div class="container__nav--login">
+                <?php if (isset($_SESSION['fname'])) { ?>
+                <a class="login" href="profile.php"><?php echo $_SESSION['fname']; ?></a>
+                <?php } else { ?>
                 <a class="login" href="login.php">Login</a>
+                <?php } ?>
             </div>
             <button class="hamburger" onclick="toggleHamburger()" title="Navigation Menu" type="button">
                 <div class="line1"><span></span> <span></span></div>

@@ -1,6 +1,6 @@
 <?php
 // Conecta a la base de datos
-$db = new mysqli('localhost', 'root', '', 'bauhaus_comments');
+$db = new mysqli('localhost', 'root', '', 'bauhaus');
 
 // Verifica la conexión
 if ($db->connect_error) {
